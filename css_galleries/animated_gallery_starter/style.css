@@ -59,26 +59,31 @@ div .item a {
   position: absolute;
 }
 
-div .item .blue {
+div .blue {
   background-color: #34495e;
 }
 
-div .item .blue i {
+div .blue i {
   color: #34495e;
 }
 
-div .item .red {
+div .red {
   background-color: #e74c3c;
 }
 
-div .item .red i {
+div .red i {
   color: #e74c3c;
 }
 
-div .item .green {
+div .green {
   background-color: #16a085;
 }
 
-div .item .green i {
+div .green i {
   color: #16a085;
+}
+
+/* Animations */
+div .item img:hover {
+  opacity: 0.3;
 }
