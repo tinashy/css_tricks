@@ -1,3 +1,11 @@
+p { 
+  animation-name: rainbowtext;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes rainbowtext {
   0% {
     color: red;
