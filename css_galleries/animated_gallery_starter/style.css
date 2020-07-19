@@ -1,116 +1,20 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto';
-}
-
-h1 {
-  text-align: center;
-  color: #34495e;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-div .item {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  max-width: 310px;
-  width: 100%;
-  background: #000000;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-div.item img {
-  max-width: 100%;
-  vertical-align: top;
-  height: 210px;
-}
-
-div .item i {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-size: 34px;
-  color: #000000;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background: #ffffff;
-}
-
-div .item a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-}
-
-div .blue {
-  background-color: #34495e;
-}
-
-div .blue i {
-  color: #34495e;
-}
-
-div .red {
-  background-color: #e74c3c;
-}
-
-div .red i {
-  color: #e74c3c;
-}
-
-div .green {
-  background-color: #16a085;
-}
-
-div .green i {
-  color: #16a085;
-}
-
-/* Animations */
-div .item img:hover {
-  opacity: 0.3;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-}
-
-/* transforming all properties inside the .item class */
-div .item * {
-  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-div .item i {
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-}
-
-div .item:hover i {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
+@keyframes rainbowtext {
+  0% {
+    color: red;
+    font-size: 20px;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+    font-size: 40px;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+    font-size: 20px;
+  }
 }
